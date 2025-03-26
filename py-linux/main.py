@@ -11,7 +11,7 @@ app = FastAPI(
     description="API de pruebas con rutas protegidas"
 )
 
-# Middleware CORS
+# Middleware CORS y ruta para front
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "https://front-prestamos.vercel.app/"],
