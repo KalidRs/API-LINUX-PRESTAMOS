@@ -14,7 +14,7 @@ app = FastAPI(
 # Middleware CORS y ruta para front
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://front-prestamos.vercel.app/"],
+    allow_origins=["https://front-prestamos.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
